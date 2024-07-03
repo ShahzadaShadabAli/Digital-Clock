@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #f1f1f1;
+    background-image: linear-gradient(90deg,
+            transparent 50px,
+            #ffb4b8 50px,
+            #ffb4b8 52px,
+            transparent 52px),
+        linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
+    background-size: 100% 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.leather-band {
+    width: 140px; 
+    height: 100px; 
+    background-color: #8b4513;
+    border-radius: 5px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.leather-band.top {
+    margin-bottom: -20px; 
+    background-image: url('/leather.jpg');
+    background-size: cover;
+}
+
+.leather-band.bottom {
+    background-image: url('/leather.jpg');
+    background-size: cover;
+    margin-top: -20px; 
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.548);
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.096);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-outline {
+    width: 320px;
+    height: 320px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.time-cont {
+    font-size: 45px;
+}
+
